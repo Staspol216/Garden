@@ -12,10 +12,6 @@
     position: relative;
     height: 66px;
     background: #242424;
-
-    border-radius: 0px 0px 15px 15px;
-
-    margin-bottom: 20px;
   }
   .cafe__header {
     position: absolute;
@@ -49,7 +45,7 @@
   }
   .cafe__list {
     overflow: auto;
-    height: 84%;
+    height: 92%;
 
     &::-webkit-scrollbar {
       width: 0;

@@ -1,7 +1,7 @@
 
 import { nanoid } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ReactComponent as LeftArrowBtn } from "../../../assets/DrinkSinglePage/icon/arrow-left.svg";
 import AltDrinksListItem from "../../alterDrinksListItem/AltDrinksListItem";
 import BackBtn from "../../backBtn/BackBtn";

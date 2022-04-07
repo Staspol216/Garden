@@ -67,7 +67,7 @@ const CoffeeShopInfo = () => {
                 </div>
             </div>
             <div className="cafe-list__photo cafe-photo">
-                <h4 className="cafe-photo__title">Фотографии <br /> заведения</h4>
+                <h4 className="cafe-photo__title">Фотографии заведения</h4>
                 <div className="cafe-photo__row">
                     <div className="cafe-photo__item">
                         <img src={ photo1 } alt="photo1" />
