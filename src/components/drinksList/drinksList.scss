@@ -1,5 +1,8 @@
 @import "../../style/config.scss";
 .categories__coffee {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 
 }
 .cofee {

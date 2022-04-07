@@ -6,7 +6,7 @@ import { CategorySinglePage , DrinkSinglePage, MainWidgetPage, Page404, PaymentP
 const Widget = () => {
     return (
         <Router>
-            <div className="widget__inner">
+            <div className="widget-wrapper widget">
                 <Routes>
                     <Route path="/" element={ <MainWidgetPage /> } />
                     <Route path=":shop" element={ <ShopCategoriesPage /> }>

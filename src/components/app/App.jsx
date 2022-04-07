@@ -9,9 +9,7 @@ const App = () => {
             <AppSidebar />
             <main className="main">
                 <WidgetBackground />
-                <div className="widget-wrapper widget">
-                    <Widget />
-                </div>
+                <Widget />
             </main>
         </div>
     );

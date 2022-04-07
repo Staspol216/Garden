@@ -1,9 +1,21 @@
-.widget__inner {
-    display: flex;
-    flex-direction: column;
-    background: #F3F4F0;
-
-    position: relative;
-
+.widget {
+    box-sizing: border-box;
+    
+    min-width: 396px;
     height: 100%;
-}
+    
+    background: #F3F4F0;
+    
+    @media (min-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        
+        max-height: 853px;
+        max-width: 375px;
+        
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2;
+    }
+  }
