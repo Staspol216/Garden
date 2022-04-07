@@ -1,0 +1,13 @@
+.widget__cafe {
+  flex: 1 1 auto;
+  background-color: aqua;
+}
+
+.cafe__banner {
+  height: 66px;
+  background: #242424;
+}
+
+.cafe__list {
+  margin: 0;
+}/*# sourceMappingURL=cafeList.css.map */

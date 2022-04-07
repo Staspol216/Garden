@@ -1,0 +1,47 @@
+@import "../../style/config.scss";
+
+.shopping-cart {
+    flex: 1 1 auto;
+}
+.shopping-cart__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+.shopping-cart__title {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: $title-color-text;
+}
+.shopping-cart__clear-btn {
+    background: transparent;
+    border: none;
+
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+
+    color: #FE6A69;
+
+    cursor: pointer;
+
+}
+.shopping-cart__list {
+    display: flex;
+    min-height: 114px;
+
+    margin-bottom: 20px;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+
+
+}
+
+

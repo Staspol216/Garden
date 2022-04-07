@@ -1,0 +1,77 @@
+@import '../../style/config.scss';
+
+.item-coffee {
+
+}
+
+.coffee__item {
+    width: fit-content;
+    margin-right: 20px;
+
+    background: $title-color-text;
+
+    border-radius: 10px;
+
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+
+    &:nth-child(1) {
+        margin-left: 20px;
+    }
+}
+.item-coffee__content {
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    height: 40px;
+    box-sizing: border-box;
+
+    border: 2px solid #383838;
+    border-radius: 10px;
+
+    padding: 4px 10px;
+
+    background: #F3F4F0;
+    
+
+}
+.item-coffee__icon-box {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 8px;
+}
+.item-coffee__descr {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    width: fit-content;
+
+    color: $title-color-text;
+
+    &_all {
+        color: $primary-color-text;
+    }
+}
+.item-coffee__info {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4px 10px;
+}
+.item-coffee__count {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+    color: $secondary-color;
+
+}
+.item-coffee__price {
+    font-size: 10px;
+    line-height: 140%;
+
+    color: $secondary-color;
+}

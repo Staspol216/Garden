@@ -1,0 +1,46 @@
+@import "../../style/config.scss";
+
+.additives {
+    position: relative;
+    background: $secondary-color;
+
+    margin: 0 auto 20px auto;
+    padding: 22px;
+
+    width: 335px;
+
+    border: 2px solid $title-color-text;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.28);
+    border-radius: 15px;
+}
+//*---------------------------ADIDITIEVS----------------------
+.additives__title {
+    margin-bottom: 10px;
+
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #959595;
+}
+
+.additives__group {
+    flex-direction: column;
+}
+
+
+.additievs__add-price {
+    position: relative;
+    display: block;
+     
+    margin-left: 20px;
+}
+  
+
+
+.additievs__add-price {
+    font-weight: 800;
+
+    color: #14AD99;;
+}

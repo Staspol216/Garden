@@ -1,0 +1,155 @@
+@import "../../style/config.scss";
+
+
+//!--------------------------FORM----------------------------------
+.payment__actions {
+    margin:0 20px;
+
+}
+.payment__form {
+
+    margin-bottom: 14px;
+
+}
+.payment__input-title {
+    display: block;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: $primary-color-text;
+    
+}
+.payment__label {
+    margin-bottom: 10px;
+
+}
+.payment__input {
+    width: 100%;
+    height: 24px;
+
+    background: transparent;
+    border: none;
+
+    border-bottom: 2px solid $primary-color-text;
+
+    margin-bottom: 20px;
+
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    color: $title-color-text;
+
+    &::placeholder {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 20px;
+        color: #959595;
+    }
+
+    option {
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+
+        color: $title-color-text;
+    }
+}
+
+//*------------------DELIVERY-TIME---------------------------------
+.payment__time-radio-group {
+    margin-top: 10px;
+}
+
+.time-radio {
+    display: flex;
+  
+    font-size: 12px;
+    line-height: 16px; 
+    font-weight: 500;
+  
+    color: $title-color-text;
+
+    margin-bottom: 24px;
+
+    label {
+        position: relative;
+    }
+  
+    input[type="radio"] {
+        margin: 0 8px 10px 0;
+  
+        width: 72px;
+        height: 28px;
+        border: none;
+  
+    }
+  
+    input[type="radio"]::before {
+        content: "";
+        display: block;
+        position: relative;
+        top: -2px;
+        left: -2px;
+  
+        width: 72px;
+        height: 28px;
+  
+        overflow: visible;
+  
+        border: 2px solid $title-color-text;
+        border-radius: 10px;
+        background-color: $secondary-color;
+  
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+    }
+  
+    input[type="radio"]:checked::before {
+        background: #14AD99;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 14px;
+
+        pointer-events: none;
+    }
+  
+}
+
+.payment__label-radio-time {
+    display: flex;
+
+    position: relative;
+
+    width: 72px;
+    height: 28px;
+
+    &:not(:last-child) {
+        margin-right: 12px;
+    }
+
+}
+
+.payment__time-text-inputs {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: $title-color-text; 
+    
+}
+
+
+//*-----------------------PAYMENT-RADIO----------------------
+
+
+.payment__delivery-radio-group {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+

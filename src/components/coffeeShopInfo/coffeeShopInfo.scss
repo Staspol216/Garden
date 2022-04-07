@@ -1,0 +1,166 @@
+@import '../../style/config.scss';
+
+.cafe-list__info {
+    position: relative;
+    z-index: 1;
+    
+    margin: 20px;
+    padding: 22px;
+    background: #F3F4F0;
+
+    border: 2px solid $title-color-text;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}
+.cafe-list__category {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+
+    border-bottom: 1px solid #959595;;
+
+}
+.products-list__item {
+
+}
+.cafe-list__products {
+
+}
+.products-list {
+    display: flex;
+    gap: 20px;
+
+    padding-left: 0px;
+
+    list-style: none;
+
+}
+.products-list__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.cafe-list__new {
+    margin-right: 20px;
+
+}
+.cafe-list__new-icon {
+    width: 24px;
+    height: 24px;
+
+    margin-bottom: 2px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.cafe-list__new-text {
+    display: block;
+
+    background: #14AD99;
+    border-radius: 2px;
+
+    font-size: 9px;
+    line-height: 12px;
+    color: #F3F4F0;
+
+    text-align: center;
+
+}
+.products-list__icon-box {
+    width: 24px;
+    height: 24px;
+
+    color: #14AD99;
+
+    margin-bottom: 6px;
+}
+.products-list__descr {
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #000;
+}
+
+.cafe-list__timetable {
+
+}
+.timetable {
+
+}
+.timetable__item {
+    display: flex;
+
+    font-size: 10px;
+    line-height: 14px;
+
+    &:not(:last-child) {
+        margin-bottom: 6px;
+    }
+}
+.timetable__day {
+    display: block;
+    width: 30px;
+    padding-right: 12px;
+
+
+    font-weight: 600;
+    color: $title-color-text;
+
+}
+.timetable__hours {
+    padding-left: 12px;
+
+    border-left: 1px solid $title-color-text;
+
+    font-weight: 800;
+}
+.cafe-list__photo {
+    position: relative;
+    padding-left: 20px;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+.cafe-list__link {
+    position: absolute;
+    bottom: -20px;
+    right: 15px;
+
+    width: 78px;
+    height: 45px;
+
+    z-index: 10;
+
+}
+.cafe-photo {
+
+}
+.cafe-photo__title {
+    margin: 0 0 6px 0;
+
+    font-size: 12px;
+    line-height: 16px;
+    color: $secondary-color;
+
+}
+.cafe-photo__row {
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 28px;
+
+}
+.cafe-photo__item {
+    width: 80px;
+    height: 53px;
+
+}

@@ -1,0 +1,59 @@
+@import "../../style/config.scss";
+.categories__tabs {
+    margin: 12px 0;
+
+}
+.tabs-panel {
+
+}
+
+.tabs-panel__list {
+    height: 35px;
+    border-bottom: 2px solid #959595;
+}
+
+.tabs-panel__item {
+    width: 100px;
+    max-width: 80px;
+    position: relative;
+    z-index: 1;
+
+    &:nth-child(1) {
+        padding-left: 20px;
+     }
+     &:nth-child(2) {
+        padding-left: 50px;
+     }
+     &:nth-child(3) {
+        padding-left: 40px;
+     }
+    &:nth-child(5) {
+       padding-left: 90px;
+    }
+}
+
+.tabs-panel__link {
+    display: flex;
+    height: 100%;
+}
+.tabs-panel__link.active .tabs-panel__descr {
+   
+    border-bottom: 3px solid #14AD99;
+}
+
+.tabs-panel__icon-box {
+    width: 24px;
+    height: 24px;
+    
+    color: $title-color-text;
+
+    margin-right: 6px;
+
+}
+.tabs-panel__descr {
+    display: block;
+    color: $title-color-text;
+
+    white-space: nowrap;
+    
+}

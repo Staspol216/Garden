@@ -1,0 +1,59 @@
+.kalinka-color-pattern {
+    background: #242424;
+}
+.ocean-color-pattern {
+    background: #F3B6D1;;
+}
+.social-color-pattern {
+    background: #B1D565;
+}
+.parus-color-pattern {
+    background: #FFC633;
+}
+.novin-color-pattern {
+    background: #5DD1B7;
+}
+.erve-color-pattern {
+    background: #FA5452;
+}
+
+.kalinka-pattern {
+    opacity: 0.06;
+    mask-image: url(../assets/patterns/black.svg);
+    -webkit-mask-image: url(../assets/patterns/black.svg);
+}
+.ocean-pattern {
+    opacity: 0.32;
+    mask-image: url(../assets/patterns/pink.svg);
+    -webkit-mask-image: url(../assets/patterns/pink.svg);
+}
+.social-pattern {
+    opacity: 0.2;
+    mask-image: url(../assets/patterns/green.svg);
+    -webkit-mask-image: url(../assets/patterns/green.svg);
+}
+.parus-pattern {
+    opacity: 0.22;
+    mask-image: url(../assets/patterns/yellow.svg);
+    -webkit-mask-image: url(../assets/patterns/yellow.svg);
+}
+.novin-pattern {
+    opacity: 0.24;
+    mask-image: url(../assets/patterns/blue.svg);
+    -webkit-mask-image: url(../assets/patterns/blue.svg);
+}
+.erve-pattern {
+    opacity: 0.08;
+    mask-image: url(../assets/patterns/red.svg);
+    -webkit-mask-image: url(../assets/patterns/red.svg);
+}
+
+.pattern-block {
+    position: absolute;
+    z-index: 0;
+
+    background-color: #fff;
+
+    width: 100%;
+    height: 100%;
+}
