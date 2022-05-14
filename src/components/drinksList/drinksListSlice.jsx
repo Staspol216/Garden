@@ -1,11 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-import { useHttp } from "../../hooks/http.hook";
+import { useHttp } from "hooks/http.hook";
 
 const initialState = {
     drinks: [],
     drinksLoadingStatus: "idle"
-
 };
 
 export const fetchDrinks = createAsyncThunk(
@@ -18,11 +17,6 @@ export const fetchDrinks = createAsyncThunk(
 );
 
 const drinksSlice = createSlice({
-    name: "drinks",
-    initialState,
-    reducers: {
-
-    },
     extraReducers: {
         [fetchDrinks.pending]: (state) => {
             state.drinksLoadingStatus = "loading";
@@ -34,7 +28,10 @@ const drinksSlice = createSlice({
         [fetchDrinks.rejected]: state => {
             state.drinksLoadingStatus = "error";
         }
-    }
+    },
+    initialState,
+    name: "drinks",
+    reducers: {}
 });
 
 const { actions, reducer } = drinksSlice;

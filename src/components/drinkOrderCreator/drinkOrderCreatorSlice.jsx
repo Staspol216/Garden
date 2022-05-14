@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-import { useHttp } from "../../hooks/http.hook";
+import { useHttp } from "hooks/http.hook";
 
 const initialState = {
   activeBeverage: {},
@@ -19,14 +19,15 @@ export const fetchBeverage = createAsyncThunk(
 );
 
 const drinkOrderCreatorSlice = createSlice({
-  name: "shoppingCart",
   initialState,
+  name: "shoppingCart",
   reducers: {
     addToCart: {
       reducer:  (state, action) => {
-        const itemIndex = state.cart.findIndex( item => item.name === action.payload.name
-                    && item.cream === action.payload.cream
-                    && item.modify === action.payload.modify);
+        const { name, cream, modify } = action.payload;
+        const itemIndex = state.cart.findIndex( item => item.name === name
+        && item.cream === cream
+        && item.modify === modify);
 
         if (itemIndex >= 0) {
           state.lastSubmitBeverage = { ...action.payload, quantity: state.cart[itemIndex].quantity + 1 };
@@ -49,9 +50,10 @@ const drinkOrderCreatorSlice = createSlice({
       }
     },
     decreaseItemCount: (state, action) => {
-      const itemIndex = state.cart.findIndex( item => item.name === action.payload.name
-                && item.cream === action.payload.cream
-                && item.modify === action.payload.modify);
+      const { name, cream, modify } = action.payload;
+      const itemIndex = state.cart.findIndex( item => item.name === name
+        && item.cream === cream
+        && item.modify === modify);
 
       if (itemIndex >= 0) {
         state.cart[itemIndex].quantity -= 1;
@@ -59,9 +61,9 @@ const drinkOrderCreatorSlice = createSlice({
       }
 
       if ( itemIndex >= 0 && state.cart[itemIndex].quantity === 0) {
-        const indexItemForDelete = state.cart.findIndex( item => item.name === action.payload.name
-                        && item.cream === action.payload.cream
-                        && item.modify === action.payload.modify);
+        const indexItemForDelete = state.cart.findIndex( item => item.name === name
+          && item.cream === cream
+          && item.modify === modify);
 
         if (indexItemForDelete !== -1) {
           state.cart.splice(indexItemForDelete, 1);

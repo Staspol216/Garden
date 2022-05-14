@@ -1,5 +1,5 @@
 import "./avatar.scss";
-import AvatarIcon from "../../assets/banner_icon/036-robot-1.svg";
+import AvatarIcon from "assets/banner_icon/036-robot-1.svg";
 
 const Avatar = () => {
   return (
